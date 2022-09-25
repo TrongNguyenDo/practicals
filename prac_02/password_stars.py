@@ -8,7 +8,7 @@ def main():
     """Function docstring"""
     # statements...
     password = get_password()
-
+    print(password)
 
 
 def get_password():
@@ -22,7 +22,6 @@ def get_password():
     # another way
     print('*' * len(password))
     return password
-
 
 
 main()
