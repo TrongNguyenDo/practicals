@@ -16,11 +16,12 @@ CODE_TO_NAME = {
 }
 
 print(CODE_TO_NAME)
-state_code = input("Enter short state:(hit enter to exit): ").upper()
+
 while state_code != "":
     try:
-       if state_code in CODE_TO_NAME:  # find key
-        print(state_code, "is", CODE_TO_NAME[state_code])
+
+        if state_code in CODE_TO_NAME:  # find key
+            print(state_code, "is", CODE_TO_NAME[state_code])
     except ValueError:
         print("Invalid short state")
     state_code = input("Enter short state: ").upper()
