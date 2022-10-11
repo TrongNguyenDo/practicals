@@ -1,18 +1,18 @@
 text = input("Text: ")
 # testing
 print(text)
-word = text.split()
-word.sort()
+words = text.split()
+words.sort()
 # testing
-print(word)
+print(words)
 word_to_frequency = {}
-for words in word:
+for word in words:
     # check if word is a key or not
-    if words in word_to_frequency:
-        word_to_frequency[words] += 1
+    if word in word_to_frequency:
+        word_to_frequency[word] += 1
     else:  # new key
-        word_to_frequency[words] = 1
+        word_to_frequency[word] = 1
 # max length of words - list comprehension
-max_length = max((len(words) for words in word))
-for words in word_to_frequency:
-    print(f"{words:{max_length}} {word_to_frequency[word]}")
+max_length = max((len(word) for word in words))
+for word in word_to_frequency:
+    print(f"{word:{max_length}} : {word_to_frequency[word]}")
