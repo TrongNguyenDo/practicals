@@ -30,8 +30,10 @@ def random_numbers(number_pick):
                 number = random.randint(1, 45)
             quick_pick.append(number)
         quick_pick.sort()
-        # List comprehension
-        print(" ".join("{:2}".format(number) for number in quick_pick))
+        string = ""
+        for number in quick_pick:
+            string += "{:2}".format(number) + " "
+        print(string)
 
 
 main()
