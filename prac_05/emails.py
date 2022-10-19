@@ -7,10 +7,10 @@ def main():
         confirmation = input(f"Is your name {get_name}? (Y/n) ")
         if confirmation.upper() != "Y" and confirmation != "":
             get_name = input("Name: ")
-        extract_name(email)[email] = get_name
+        email_name[email] = get_name
         email = input("Email: ")
 
-    for email, get_name in extract_name(email).items():
+    for email, get_name in email_name.items():
         print(f"{get_name} ({email})")
 
 
