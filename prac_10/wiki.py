@@ -14,7 +14,7 @@ def main():
             try:
                 search_term == "Python"
             except wikipedia.exceptions.DisambiguationError as e:
-                print(e.options
+                print(e.options)
 
 
 main()
