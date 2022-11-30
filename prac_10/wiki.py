@@ -4,7 +4,7 @@ import wikipedia
 def main():
     valid = True
     """ write a try except to catch Disambiguation Error if the user enter Python"""
-    while not valid:
+    while valid:
         try:
             search_term = input("Enter a page title or search phrase: ")
             if search_term == "Python":
