@@ -10,12 +10,18 @@ def main():
             if search_term == "Python":
                 print("The Python search term could give Disambiguation Error")
                 search_term = input("Enter a page title or search phrase: ")
-                wikipedia.page(search_term)
+                wikipedia.search(search_term)
+                print(wikipedia.page(search_term))
+                print(wikipedia.page(search_term))
+                print(wikipedia.page(search_term).title)
                 print(wikipedia.summary(search_term))
+                print(wikipedia.page(search_term).url)
             elif search_term != "Python":
                 wikipedia.search(search_term)
-                wikipedia.page(search_term)
+                print(wikipedia.page(search_term))
+                print(wikipedia.page(search_term).title)
                 print(wikipedia.summary(search_term))
+                print(wikipedia.page(search_term).url)
             elif search_term == "":
                 break
         except wikipedia.exceptions.DisambiguationError as e:
